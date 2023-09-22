@@ -1,0 +1,26 @@
+{
+  "base_url": "https://api-m.sandbox.paypal.com",
+  "admin_user": "qa-admin-user-one",
+  "admin_password": "qa-admin-password",
+  "services": [
+    {
+      "name": "Paypal",
+      "url": "https://api-m.sandbox.paypal.com",
+      "user": "qa-serv1-user",
+      "password": "qa-serv1-pass-one",
+      "client_id": "AUv8rrc_P-EbP2E0mpb49BV7rFt3Usr-vdUZO8VGOnjRehGHBXkSzchr37SYF2GNdQFYSp72jh5QUhzG",
+      "client_secret": "EMnAWe06ioGtouJs7gLYT9chK9-2jJ--7MKRXpI8FesmY_2Kp-d_7aCqff7M9moEJBvuXoBO4clKtY0v",
+      "port": "8080"
+    },
+    {
+      "name": "service-2",
+      "url": "qa-serv2.com",
+      "user": "qa-serv2-user",
+      "password": "qa-serv2-pass-one",
+      "client_id": "AUv8rrc_P-EbP2E0mpb49BV7rFt3Usr-vdUZO8VGOnjRehGHBXkSzchr37SYF2GNdQFYSp72jh5QUhzG",
+      "client_secret": "EMnAWe06ioGtouJs7gLYT9chK9-2jJ--7MKRXpI8FesmY_2Kp-d_7aCqff7M9moEJBvuXoBO4clKtY0v",
+      "port": "8080"
+    }
+  ],
+  "amazon_url": "https://www.amazon.in"
+}

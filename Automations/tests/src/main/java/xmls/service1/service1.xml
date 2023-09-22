@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Service 1">
+    <test name="Test Basics 1">
+        <parameter name="emailid" value="tester456@gmail.com"/>
+        <parameter name="password" value="test@123"/>
+        <classes>
+            <class name="services.service1.login.AdminAuthorizationTest"/>
+        </classes>
+    </test> <!-- Test -->
+
+    <test name="Test Basics 2">
+        <parameter name="emailid" value="tester789@gmail.com"/>
+        <classes>
+            <class name="services.service1.login.AdminAuthorizationTest"/>
+        </classes>
+
+    </test> <!-- Test -->
+
+    <test name="Test Basics 3">
+        <parameter name="emailid" value="tester789@gmail.com"/>
+        <classes>
+            <class name="services.service1.login.AdminAuthorizationTest"/>
+        </classes>
+
+    </test> <!-- Test -->
+
+    <test name="Test Basics 4">
+        <parameter name="emailid" value="tester789@gmail.com"/>
+        <classes>
+            <class name="services.service1.login.AdminAuthorizationTest"/>
+        </classes>
+
+    </test> <!-- Test -->
+
+    <test name="Test Basics 5">
+        <parameter name="emailid" value="tester789@gmail.com"/>
+        <classes>
+            <class name="services.service1.login.AdminAuthorizationTest"/>
+        </classes>
+
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

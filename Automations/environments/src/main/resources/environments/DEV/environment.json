@@ -1,0 +1,5 @@
+{
+  "base_url": "qa_baseurl_one.com",
+  "admin_user": "qa-admin-user-one",
+  "admin_password": "qa-admin-password"
+}

@@ -1,0 +1,19 @@
+{
+  "base_url": "prod_baseurl_one.com",
+  "admin_user": "prod-admin-user-one",
+  "admin_password": "prod-admin-password",
+  "services": [
+    {
+      "name": "service-1",
+      "url": "prod-serv1.com",
+      "user": "prod-serv1-user",
+      "password": "prod-serv1-pass-one"
+    },
+    {
+      "name": "service-2",
+      "url": "prod-serv2.com",
+      "user": "prod-serv2-user",
+      "password": "prod-serv2-pass-one"
+    }
+  ]
+}

@@ -17,6 +17,7 @@
         <module>utils</module>
         <module>services</module>
         <module>ui</module>
+        <module>drivers</module>
     </modules>
 
     <dependencies>

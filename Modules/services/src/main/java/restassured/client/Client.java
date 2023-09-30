@@ -4,7 +4,6 @@ import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.Header;
 import io.restassured.mapper.ObjectMapperType;
-import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import lombok.Getter;
 
@@ -14,9 +13,6 @@ import static io.restassured.RestAssured.given;
 public class Client {
     private String url;
     private Header header;
-
-    private RequestSpecBuilder specBuilder;
-
 
     @Getter
     private String csrfToken;

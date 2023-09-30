@@ -7,6 +7,17 @@ import java.util.stream.IntStream;
 
 public class TestJukeBox {
     public static void main(String[] args) throws Exception {
+        String var = "makemv ytrip";
+        String var2 = var.substring(1);
+        System.out.println(var2);
+        System.out.println(var.charAt(0));
+        String strAny = """
+                I can type anything"'/hello is
+                !@
+                """;
+        System.out.printf(String.format("this is %1$s %2$s", "one","two"));
+
+        System.out.println(strAny);
         String stttttttt = "07:05:45PM";
         System.out.println(stttttttt.substring(0,2));
         stttttttt = stttttttt.replace(stttttttt.substring(0,2), String.valueOf(Integer.parseInt(stttttttt.substring(0,2)) + 12));
@@ -44,6 +55,7 @@ public class TestJukeBox {
         System.out.println("is map sorted" + mapp);
         int[] retArr = new int[4];
         retArr[0] = 3;
+        int p = retArr.length ;
 
         System.out.println(candles.put(5,1));
         System.out.println("map thing");

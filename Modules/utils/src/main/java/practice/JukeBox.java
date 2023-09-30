@@ -16,6 +16,7 @@ public class JukeBox implements Comparable<JukeBox>{
         this.genre = genre;
         this.year = year;
         this.singer = singer;
+        System.out.println("cons called");
     }
 
     public String getTitle() {

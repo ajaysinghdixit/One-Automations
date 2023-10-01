@@ -1,35 +1,32 @@
 package webdrivers;
 
+import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
-import java.time.Duration;
-import java.util.concurrent.TimeUnit;
+public abstract class WebDriverFactory<T extends MutableCapabilities> {
 
-public class WebDriverFactory {
+    public abstract T setOptions();
 
-    public RemoteWebDriver driver;
+    public abstract WebDriver createDriver(T options);
 
-    public WebDriver createDriver(String browser) {
-        switch (browser) {
-            case "chrome" -> {
-                driver = (RemoteWebDriver) new ChromeDriverFactory().setDriver();
-            }
-            case "edge" -> {
-                driver = (RemoteWebDriver) new EdgeDriverFactory().setDriver();
-            }
-            case "firefox" -> {
-                driver = (RemoteWebDriver) new FireFoxDriverFactory().setDriver();
-            }
-        }
-        return this.driver;
+    public void setDefaultOptions(T options) {
+        //set default capabilities
     }
 
-    public void setDefaultOptions(){
-        driver.manage().deleteAllCookies();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-        driver.manage().window().maximize();
+    public  void addCapabilities(T capabilities){
+        this.setOptions().merge(capabilities);
+    }
+
+    public WebDriver createDriver() {
+        return this.createDriver(this.setOptions());
+    }
+
+    public  WebDriver createDriverWithCapabilities(MutableCapabilities capabilities) {
+        T op = setOptions();
+        op.merge(capabilities);
+        return createDriver(op);
     }
 
 }
